@@ -9,6 +9,9 @@ $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 
 if ($query) {
     echo "<p>Successfully created table: posts</p>";
-} else {
+ }  
+ else {
     echo "<p>" . $_SESSION["connection"]->error ."</p>";
 }
+
+$query = $_SESSION["connection"]->query();
