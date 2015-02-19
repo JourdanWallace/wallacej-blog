@@ -9,11 +9,11 @@
     
     $hashedPassword = crypt($password, $salt);
     
-    $query = $_SESSION["connection"]->query("INSERT INTO users SET"
+    $query = $_SESSION["connection"]->query("INSERT INTO users SET "
             . "email = '$email',"
             . "username = '$username',"
             . "password= '$hashedPassword',"
-            . "salt = '$salt',");
+            . "salt = '$salt'");
     
     if($query){
         echo "Successfully created user: $username";
