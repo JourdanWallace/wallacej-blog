@@ -1,5 +1,5 @@
 <?php
-
+    //this is the file being accessed
     require_once(__DIR__ . "/../model/config.php");
     
     $query = "SELECT * FROM posts";
